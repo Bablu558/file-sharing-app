@@ -91,7 +91,7 @@ const FileList = () => {
                       style={{ textDecoration: 'none', color: 'inherit' }}
                       download={file.filename}
                     >
-                      Download Link
+                      View
                     </a>
                   </Typography>
                 </CardContent>
