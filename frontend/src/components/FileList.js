@@ -10,11 +10,11 @@ import {
   Grid,
   Button,
   CardActions,
-  IconButton,
-  Tooltip,
+  // IconButton,
+  // Tooltip,
 } from '@mui/material';
-import ShareIcon from '@mui/icons-material/Share';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+// import ShareIcon from '@mui/icons-material/Share';
+// import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const FileList = () => {
   const [files, setFiles] = useState([]);
