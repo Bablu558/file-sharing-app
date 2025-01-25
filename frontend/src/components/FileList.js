@@ -106,13 +106,13 @@ const FileList = () => {
                   </Button>
 
                   {/* Share Button */}
-                  {/* <CopyToClipboard text={`http://localhost:5000/download/${file.filename}`}>
+                  {/* { <CopyToClipboard text={`http://localhost:5000/download/${file.filename}`}>
                     <Tooltip title="Share">
                       <IconButton color="primary">
                         <ShareIcon />
                       </IconButton>
                     </Tooltip>
-                  </CopyToClipboard> */}
+                  </CopyToClipboard> } */}
                 </CardActions>
               </Card>
             </Grid>
