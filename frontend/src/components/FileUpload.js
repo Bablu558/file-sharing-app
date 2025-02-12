@@ -42,7 +42,7 @@ const FileUpload = ({ setFiles }) => {
         }
     }, [isAuthenticated, navigate]);
 
-    const socket = io('http://localhost:5000');
+    const socket = io('https://file-sharing-app-1-ds6j.onrender.com');
 
     socket.on('fileUploaded', (newFile) => {
         if (typeof setFiles === 'function') {

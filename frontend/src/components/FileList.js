@@ -37,7 +37,7 @@ const FileList = () => {
 
   const handleDownload = (fileUrl, filename) => {
     fetch(fileUrl, { method: 'GET' })
-      .then((response) => response.blob())
+      .then((response) => response.blob())//blob(binary large object)
       .then((blob) => {
         const url = window.URL.createObjectURL(blob);
         const a = document.createElement('a');
@@ -85,7 +85,7 @@ const FileList = () => {
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p">
                     <a
-                      href={`http://localhost:5000${file.fileUrl}`}
+                      href={`https://file-sharing-app-1-ds6j.onrender.com${file.fileUrl}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ textDecoration: 'none', color: 'inherit' }}
@@ -100,7 +100,7 @@ const FileList = () => {
                     size="small"
                     variant="outlined"
                     color="primary"
-                    onClick={() => handleDownload(`http://localhost:5000${file.fileUrl}`, file.filename)}
+                    onClick={() => handleDownload(`https://file-sharing-app-1-ds6j.onrender.com${file.fileUrl}`, file.filename)}
                   >
                     Download
                   </Button>
